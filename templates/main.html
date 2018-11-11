@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>{{ the_title }}</title>
+		<link rel="stylesheet" href="static/style.css" />
+		<style type="text/css">
+			body{
+				background: {{ back_color }}
+			}
+		</style>
+	<head>
+
+	<body>
+		<form method="POST" action="/result">
+			<table>
+				<tr>
+					<td style = "background: {{colors[0]}}"><input type="submit" name="color" value={{colors[0]}}></td>
+					<td style = "background: {{colors[1]}}"><input type="submit" name="color" value={{colors[1]}}></td>
+					<td style = "background: {{colors[2]}}"><input type="submit" name="color" value={{colors[2]}}></td>
+				</tr>
+				<tr>
+					<td style = "background: {{colors[3]}}"><input type="submit" name="color" value={{colors[3]}}></td>
+					<td style = "background: {{colors[4]}}"><input type="submit" name="color" value={{colors[4]}}></td>
+					<td style = "background: {{colors[5]}}"><input type="submit" name="color" value={{colors[5]}}></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+
+<html>
